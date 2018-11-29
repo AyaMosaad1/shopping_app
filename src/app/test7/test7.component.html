@@ -1,0 +1,19 @@
+<p>
+  test7 works!
+</p>
+
+<div class="container">
+  <ul>
+    <li *ngFor="let number of array">
+      {{ number }}
+    </li>
+  </ul>
+</div>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="3"> I am in case 333 </p>
+  <p *ngSwitchCase="5"> I am in case 555 </p>
+  <p *ngSwitchCase="9"> I am in case 999 </p>
+  <p *ngSwitchDefault> I am in case default </p>
+
+</div>

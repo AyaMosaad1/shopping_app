@@ -1,0 +1,21 @@
+<p>
+  shopping-list works!
+</p>
+
+<div class="row">
+  <div class="col-xs-10">
+    <app-shopping-list-edit>
+    </app-shopping-list-edit>
+    <hr>
+    
+      <div class="container">
+        <ul class="list-group" *ngFor="let index of shoppingarr">
+          <li class="list-group-item">
+            {{index.name}}({{index.amount}})
+          </li>
+        </ul>
+      </div>
+    
+
+  </div>
+</div>

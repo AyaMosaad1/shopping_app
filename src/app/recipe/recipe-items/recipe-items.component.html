@@ -1,0 +1,23 @@
+<p>
+  recipe-items works!
+</p>
+<div class="container" >
+  <!--the name of element here is the same of index element in ts  -->
+  <div class="card card-body" style="width:40%">
+    <div class="card-header">
+      <p> this {{ recipe.name }} </p>
+    </div>
+    <div class="card-text">
+      <p class="lead">this is {{ recipe.description }}</p>
+    </div>
+    <div class="card-header">
+      <img class="card-img-right pull-right"
+           src="{{ recipe.imagepath }}"
+           alt="card"
+           style="max-width:70px;">
+      <button class="btn btn-danger  ml-5"
+              click="onSelected()"
+              >ADD</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<!-- to call the  array and class by index of for loop and  -->
+
+<section>
+ <app-recipe-items
+ *ngFor="let index of recipes"
+ [recipe]="index"
+ (onSelectedrecipe)="OnSelectRecipe(index)"
+  ></app-recipe-items>
+</section>
+

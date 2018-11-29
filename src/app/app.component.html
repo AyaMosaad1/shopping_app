@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header (featureSelected)="onNavigate($event)">
+
+</app-header>
+<hr>
+<app-recipe *ngIf="loadedfeature==='recipe'"></app-recipe>
+<app-shopping-list *ngIf="loadedfeature !=='recipe'"></app-shopping-list>
+<hr>
+<!--<app-test7></app-test7>
+<hr>
+<p appDirctive > this is DirctiveDirective</p>-->

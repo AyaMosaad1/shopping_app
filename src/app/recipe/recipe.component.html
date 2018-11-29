@@ -1,0 +1,26 @@
+
+<div class="container">
+
+  <div class="row lead">
+    <div class="col-lg-8">
+      <app-recipe-list
+      (recipewasSelected)="selectedrecipe=$event"></app-recipe-list>
+    </div>
+    <div class="col-lg-4">
+      <app-recipe-details
+     *ngIf="selectedrecipe; else infotext"
+        [recipeD]="selectedrecipe">
+      </app-recipe-details>
+    </div>
+    <ng-template #infotext>
+      <p> Please Select a Recipe! </p>
+    </ng-template>
+    <!--
+    <div class="col-lg-0">
+    <app-recipe-items *ngFor="let recipe of recipes"
+                      >
+
+    </app-recipe-items>
+  </div> -->
+  </div>
+</div>

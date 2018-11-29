@@ -1,0 +1,33 @@
+<p>
+  shopping-list-edit works!
+</p>
+
+<form class="form-group" action="#">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <label for="name"> Name </label>
+        <input type="text" class="form-control "
+               id="name"
+               #Inputname>
+      </div>
+      <div class="col-sm-4">
+        <label for="amoount">Amount </label>
+        <input type="number" class="form-control"
+               id="amoount"
+               #Inputnumber>
+      </div>
+    </div>
+    <div class="py-4">
+      <button type="submit"
+              class="btn btn-primary mr-3"
+              (click)="onAddItem()">
+        Submit
+      </button>
+      <button type="submit" class="btn btn-dark mr-3">Delete</button>
+      <button type="submit" class="btn btn-danger mr-3">
+      clear List</button>
+    </div>
+  </div>
+</form>
+
